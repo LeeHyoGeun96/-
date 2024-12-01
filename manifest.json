@@ -1,43 +1,38 @@
 {
   "author": "HyoGeun-Lee",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Color Blind",
   "short_name": "color",
   "description": "Extension Program for Improving Web Accessibility Initiative(WAI) of color-blind people.",
   "version": "0.0.1",
   "version_name": "preview",
 
-  "browser_action": {
-      "default_popup": "popup.html",
-      "default_title" : "색상을 도형으로 바꿔줍니다.",
-      "defalut_icon" : {
-        "16" : "./src/img/icon-32.png",
-        "32" : "./src/img/icon-32.png"
-      }
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "색상을 도형으로 바꿔줍니다.",
+    "default_icon": {
+      "16": "./src/img/icon-32.png",
+      "32": "./src/img/icon-32.png"
+    }
   },
 
-  "permissions": [
-    "activeTab",
-    "webRequest",
-    "storage",
-    "https://*/",
-    "http://*/"
-  ],
+  "permissions": ["activeTab", "storage"],
 
-  "content_scripts" : [
+  "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js" : ["./content.js"]
+      "js": ["./content.js"]
     }
   ],
-  
+
   "cross_origin_opener_policy": {
     "value": "same-origin"
   },
-  "icons" : {
-    "16" : "./src/img/icon-16.png",
-    "32" : "./src/img/icon-32.png",
-    "48" : "./src/img/icon-48.png",
-    "128" : "./src/img/icon-128.png"
-  }
+  "icons": {
+    "16": "./src/img/icon-16.png",
+    "32": "./src/img/icon-32.png",
+    "48": "./src/img/icon-48.png",
+    "128": "./src/img/icon-128.png"
+  },
+  "host_permissions": ["*://*/*"]
 }

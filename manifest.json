@@ -24,6 +24,9 @@
       "js": ["./content.js"]
     }
   ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
 
   "cross_origin_opener_policy": {
     "value": "same-origin"

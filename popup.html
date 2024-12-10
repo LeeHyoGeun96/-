@@ -1,25 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<link>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <form action="#">
-      <p class="">원하는 영역의 크기를 고르시오(defalut 20px);</p>
-    </form>
-    <div class="buttons">
-      <input type="radio">
-      <button value="10">10 pixel</button>
-      <button value="20">20 pixel</button>
-      <button value="40">40 pixel</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="popup.js" defer></script>
+    <title>색각이상자 도움 설정</title>
+  </head>
+  <body>
+    <div class="tab-container">
+      <div class="tab-buttons">
+        <button class="tab-button active" data-tab="settings">설정</button>
+        <button class="tab-button" data-tab="guide">기호 가이드</button>
+      </div>
+
+      <div class="tab-content active" id="settings">
+        <form class="settings-form">
+          <h2 class="title">색각이상자 도움 설정</h2>
+          <p class="description">원하는 영역의 크기를 선택하세요</p>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="pixel-size" value="10" />
+              <span class="radio-text">10 pixel</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="pixel-size" value="20" checked />
+              <span class="radio-text">20 pixel</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="pixel-size" value="40" />
+              <span class="radio-text">40 pixel</span>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="tab-content" id="guide">
+        <h2 class="title">색상 기호 가이드</h2>
+        <div class="symbol-list">
+          <div class="symbol-item">
+            <div class="symbol R"></div>
+            <div class="color-info">
+              <span class="color-name">빨강 (Red)</span>
+              <span class="color-range">0° ~ 18°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol YR"></div>
+            <div class="color-info">
+              <span class="color-name">황적 (Yellow-Red)</span>
+              <span class="color-range">18° ~ 54°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol Y"></div>
+            <div class="color-info">
+              <span class="color-name">노랑 (Yellow)</span>
+              <span class="color-range">54° ~ 90°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol GY"></div>
+            <div class="color-info">
+              <span class="color-name">황녹 (Green-Yellow)</span>
+              <span class="color-range">90° ~ 126°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol G"></div>
+            <div class="color-info">
+              <span class="color-name">초록 (Green)</span>
+              <span class="color-range">126° ~ 162°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol BG"></div>
+            <div class="color-info">
+              <span class="color-name">청록 (Blue-Green)</span>
+              <span class="color-range">162° ~ 198°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol B"></div>
+            <div class="color-info">
+              <span class="color-name">파랑 (Blue)</span>
+              <span class="color-range">198° ~ 234°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol PB"></div>
+            <div class="color-info">
+              <span class="color-name">청자 (Purple-Blue)</span>
+              <span class="color-range">234° ~ 270°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol P"></div>
+            <div class="color-info">
+              <span class="color-name">보라 (Purple)</span>
+              <span class="color-range">270° ~ 306°</span>
+            </div>
+          </div>
+          <div class="symbol-item">
+            <div class="symbol RP"></div>
+            <div class="color-info">
+              <span class="color-name">자적 (Red-Purple)</span>
+              <span class="color-range">306° ~ 342°</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
   </body>
 </html>
-

@@ -1,34 +1,157 @@
-:root {
-  font: --;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
 body {
+  width: 300px;
+  margin: 0;
+  padding: 15px;
+  font-family: Arial, sans-serif;
 }
 
-.container {
+.tab-container {
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+.tab-button.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.title {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.description {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-text {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.symbol-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.symbol-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.symbol {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  min-width: 320px;
-  min-height: 600px;
+  position: relative;
+  background: #fff;
 }
 
-button {
-  background-color: red;
+.color-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.color-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.color-range {
+  font-size: 12px;
+  color: #666;
+}
+
+/* 각 기호별 이미지 스타일 */
+.symbol.R {
+  background: url("src/img/01.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.YR {
+  background: url("src/img/02.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.Y {
+  background: url("src/img/03.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.GY {
+  background: url("src/img/04.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.G {
+  background: url("src/img/05.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.BG {
+  background: url("src/img/06.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.B {
+  background: url("src/img/07.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.PB {
+  background: url("src/img/08.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.P {
+  background: url("src/img/09.png") center center no-repeat;
+  background-size: 24px;
+}
+
+.symbol.RP {
+  background: url("src/img/10.png") center center no-repeat;
+  background-size: 24px;
 }

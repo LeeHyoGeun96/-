@@ -1,16 +1,14 @@
 body {
   width: 350px; /* 필요한 경우 더 크게 조정 */
-  height: auto; /* 컨텐츠에 맞게 자동 조정 */
+  height: fit-content;
   margin: 0;
   padding: 15px;
   font-family: Arial, sans-serif;
-  overflow: visible;
 }
 
 .tab-container {
   width: 100%;
-  height: auto;
-  overflow: visible;
+  height: fit-content;
 }
 
 .tab-buttons {
@@ -32,9 +30,9 @@ body {
   color: #000;
   border-bottom: 2px solid #000;
 }
-
 .tab-content {
   display: none;
+  height: fit-content;
 }
 
 .tab-content.active {
@@ -74,6 +72,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  height: fit-content;
 }
 
 .symbol-item {

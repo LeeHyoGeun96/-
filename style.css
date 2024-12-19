@@ -1,12 +1,16 @@
 body {
-  width: 300px;
+  width: 350px; /* 필요한 경우 더 크게 조정 */
+  height: auto; /* 컨텐츠에 맞게 자동 조정 */
   margin: 0;
   padding: 15px;
   font-family: Arial, sans-serif;
+  overflow: visible;
 }
 
 .tab-container {
   width: 100%;
+  height: auto;
+  overflow: visible;
 }
 
 .tab-buttons {

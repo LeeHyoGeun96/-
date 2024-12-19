@@ -166,7 +166,7 @@ const ColorSymbolConverter = {
           const symbol = this.matchColor(h, s);
           if (symbol) {
             // 어두운 배경(l < 50)에서는 흰색, 밝은 배경에서는 검은색 사용
-            ctx.strokeStyle = l < 50 ? "white" : "black";
+            ctx.strokeStyle = l < 30 ? "white" : "black";
             this.drawColor(ctx, symbol, x, y, level);
           }
         }

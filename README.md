@@ -93,13 +93,3 @@ https://github.com/user-attachments/assets/d2af0c45-114b-49c4-a78c-36cff8ddb4f1
 
 ## 라이선스
 추후 라이선스 정책 결정 예정
-
-## 개발자
-이효근 (한국교통대학교 소프트웨어학전공)
-
-## 참고문헌
-- NAVER 널리 가이드라인
-- 웹 접근성 연구소
-- Color Universal Design Organization
-
-우선 동작만 구현해 놓은 프로토타입입니다

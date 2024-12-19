@@ -36,9 +36,9 @@ https://github.com/user-attachments/assets/d2af0c45-114b-49c4-a78c-36cff8ddb4f1
 - 색상의 상징적 의미를 기하학적 도형으로 변환하여 시각적 의미 전달 강화
   (예: 에너지를 상징하는 빨강은 삼각형으로, 안정을 의미하는 녹색은 사각형으로 표현)
     
-| ![image](https://github.com/user-attachments/assets/27142ca6-93d4-4a48-85aa-9350e6e55975) |
-|:---:|
-| 예술작품 |
+| ![image](https://github.com/user-attachments/assets/27142ca6-93d4-4a48-85aa-9350e6e55975) | ![image](https://github.com/user-attachments/assets/28bc0d93-7b3c-4b0c-af70-e4b2d265e61d) |
+|:---:|:---:|
+| 예술작품 | 쇼핑몰 |
 
 
 ## 향후 개발 계획
